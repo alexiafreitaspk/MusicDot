@@ -1,30 +1,39 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-BR">
 <head>
-<title>--Formulário Contato--</title>
-<meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/ContatoEstilo.css">
+    <title>--Formulário Contato--</title>
 </head>
-
 <body>
-<form name="meu_form">
+    <img src="img/logo.svg" alt="logo musicdot">
+    <h1 class="titulo"> Entre em contato</h1>
+    
+    <form action="contato.html" method="post">
+        <div>
+            <input type="text" id="nome" placeholder="Digite o nome" required/>
+            <label for="nome">Nome</label>
+        </div>
+        <div>
+            <input type="number" id="fone" placeholder="(xx)xxxxx-xxxx" required/>
+            <label for="fone">Fone</label> 
+        </div>
+        <div>
+            <input type="email" id="email" placeholder="nome@mail.com" required/>
+            <label for="email">Email</label> 
+        </div>
+        <div>
+            <textarea id="msg" placeholder="Deixe sua opinião" required></textarea>
+            <label for="msg"></label>
+        </div>
+        <div class="botão">
+            <button type="submit">Enviar</button>
+        </div>
 
-  <h1>Entre em contato</h1>
-
-  <input type="text" id="nomeid" placeholder="Nome e sobrenome" required="required" name="nome" />
-  <label for="nome">Nome</label><br><br>
-
-  <input type="tel" id="foneid" placeholder="(xx) xxxxx-xxxx" name="fone" />
-  <label for="fone">Fone</label><br><br>
-
-  <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
-  <label for="email">Email</label><br><br>
-
-  <textarea placeholder="Deixe sua opnião"></textarea><br><br>
-
-  <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
-</form>
-<a href="index.html"> Voltar 
-    á página principal</a>
+    </form>
 </body>
 </html>
+<a href="sobre.html"> Voltar à página
